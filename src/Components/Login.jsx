@@ -8,19 +8,17 @@ const Login = () => {
   const email = useRef();
   const password = useRef();
   const [ErrorMesage, SetErrormesage] = useState();
+
   const submitChange = (e) => {
     SetIsSignIn(!isSignIn);
   };
   const FormSubmit = (e) => {
     e.preventDefault();
-    SetErrormesage("")
-
+    SetErrormesage("");
     const measage = CheckValidate(email.current.value, password.current.value);
-    console.log(password.current.value);
-
     SetErrormesage(measage);
-    console.log(measage);
-    
+   
+   
   };
   return (
     <div className="">
