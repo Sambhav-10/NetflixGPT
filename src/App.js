@@ -1,11 +1,9 @@
-import logo from './logo.svg';
-import './App.css';
+ import './App.css';
+import Body from './Components/Body';
 
 function App() {
   return (
-    <div className="App text-2xl text-cyan-500">
-   namskar bundelkhand
-    </div>
+   <Body/>
   );
 }
 
